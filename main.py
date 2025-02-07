@@ -54,6 +54,7 @@ def get_character_count(text):
                 "number_of_use": character_dictionary[character]
             }
             alphabets_only.append(number_of_characters)
+    # calling on sort by fn. works as parameter for list.sort.
     alphabets_only.sort(reverse=True, key=sort_by_number_of_use)
     return alphabets_only
 
